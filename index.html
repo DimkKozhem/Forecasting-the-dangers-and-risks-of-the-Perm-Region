@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карта Пермского края</title>
+    <style>
+        #date-selector {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #map-container {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="date-selector">
+        <form method="post">
+            <label for="date">Выберите дату:</label>
+            <select id="date" name="date">
+                {% for d in date_range %}
+                    <option value="{{ d }}" {% if d == selected_date %}selected{% endif %}>{{ d.strftime('%d.%m.%Y') }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Обновить">
+        </form>
+    </div>
+    <div id="map-container">
+        {{ map|safe }}
+    </div>
+</body>
+</html>
+
+
