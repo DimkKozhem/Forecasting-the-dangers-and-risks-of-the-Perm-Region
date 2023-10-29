@@ -33,7 +33,7 @@
 
 **Ноутбук с решением:** `MSHS_RNN_perm.ipynb`
 
-Веса модели можно скачать по [ссылке](https://colab.research.google.com](https://drive.google.com/file/d/1bdPrDfgm8u7i6dN8M8WFFskpfNxf0y6J/view?usp=drive_link)).
+Веса модели можно скачать по [ссылке](https://drive.google.com/file/d/1nSNLcZed6qOkg1pPcgUvSaT3Y2WPBGVM/view?usp=sharing).
 
 Используемые библиотеки:
 - scikit-learn
